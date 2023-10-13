@@ -1,0 +1,16 @@
+class Solution:
+    def getAverages(self, nums: List[int], k: int) -> List[int]:
+        n = len(nums)
+        avgs = [0] * n
+        for i in range(n):
+          total = 0
+          count = 0
+          for j in range(i-k, i+k+1):
+            if j >= 0 and j < n:
+                total += nums[j]
+                count += 1
+            if count < 2*k+1:
+              avgs[i] = -1
+            else:
+              avgs[i] = total // (2*k+1)
+        return avgs
