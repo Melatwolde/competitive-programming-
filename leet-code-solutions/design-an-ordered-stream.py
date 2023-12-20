@@ -16,13 +16,6 @@ class OrderedStream:
 
         return result
 
-# Example usage:
-orderedStream = OrderedStream(5)
-print(orderedStream.insert(3, "ccccc"))  # Output: []
-print(orderedStream.insert(1, "aaaaa"))  # Output: ["aaaaa"]
-print(orderedStream.insert(2, "bbbbb"))  # Output: ["bbbbb", "ccccc"]
-print(orderedStream.insert(5, "eeeee"))  # Output: []
-print(orderedStream.insert(4, "ddddd"))  # Output: ["ddddd", "eeeee"]
 
 
 
