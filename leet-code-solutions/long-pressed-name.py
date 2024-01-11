@@ -9,6 +9,7 @@ class Solution:
                 j+=1
             else:
                 return False
-        return i == len(name)
+        if i == len(name):
+            return True
 
         
