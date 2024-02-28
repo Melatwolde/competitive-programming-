@@ -18,7 +18,7 @@ class Solution:
                 if i == "*":
                     stack.append(num2 * num1)
                 if i == "/":
-                    stack.append(math.trunc(num2/num1))
+                    stack.append(int(num2/num1))
         return sum(stack)
 
                 
